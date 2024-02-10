@@ -4,8 +4,12 @@ public class Player {
     String name;
     int guess;
 
-    void setGuess(){
+    Player(String name){
+        this.name = name;
+    }
+
+    void startguess(){
         guess = (int)(Math.random()*10);
-        System.out.println(name + "guessed" + guess);
+        System.out.println(name + " guessed " + guess);
     }
 }
