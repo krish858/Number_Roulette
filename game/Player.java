@@ -1,6 +1,9 @@
 package game;
 
+import java.util.Scanner;
+
 public class Player {
+    Scanner g = new Scanner(System.in);
     String name;
     int guess;
 
@@ -9,7 +12,8 @@ public class Player {
     }
 
     void startguess(){
-        guess = (int)(Math.random()*10);
+        System.out.print("choose a number: ");
+        guess = g.nextInt();
         System.out.println(name + " guessed " + guess);
     }
 }

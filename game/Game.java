@@ -6,12 +6,16 @@ public class Game {
 
          private boolean correctguess(){
                 if(p1.guess == rndom_no){
+                    System.out.println(p1.name + " wins!!");
                         return true;
                 } else if (p2.guess == rndom_no) {
+                    System.out.println(p2.name + " wins!!");
                         return true;
                 } else if (p3.guess == rndom_no) {
+                    System.out.println(p3.name + " wins!!");
                         return true;
                 } else if (p4.guess == rndom_no) {
+                    System.out.println(p4.name + " wins!!");
                         return true;
                 }else{
                         return false;
@@ -28,10 +32,12 @@ public class Game {
         void StartGame(){
                 System.out.println("Welcome to Number Roulette");
                 System.out.println("");
+
+                System.out.println("Tip: you can also give penalties to each other for a wrong guess");
+
                 System.out.println("");
-                System.out.println("note: you can also give penalties to each other for a wrong guess");
-                rndom_no = (int)(Math.random()*10);
-                System.out.println(rndom_no);
+
+                rndom_no = (int)(Math.random()*50);
 
                while(true){
                        p1.startguess();
@@ -45,7 +51,7 @@ public class Game {
                        }else{
                                System.out.println("Nobody wins ......");
                                System.out.println("resetting the value to be guessed......");
-                               rndom_no = (int)(Math.random());
+                               rndom_no = (int)(Math.random()*50);
                        }
                }
 
