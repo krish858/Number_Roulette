@@ -33,7 +33,7 @@ public class Game {
                 System.out.println("Welcome to Number Roulette");
                 System.out.println("");
 
-                System.out.println("Tip: you can also give penalties to each other for a wrong guess");
+                System.out.println("Tip: you can also give penalties to each other for a wrong guess or it could be used while playing truth and dare there are endless posibilities");
 
                 System.out.println("");
 
