@@ -37,7 +37,7 @@ public class Game {
 
                 System.out.println("");
 
-                rndom_no = (int)(Math.random()*50);
+                rndom_no = (int)(Math.random()*10);
 
                while(true){
                        p1.startguess();
@@ -51,7 +51,7 @@ public class Game {
                        }else{
                                System.out.println("Nobody wins ......");
                                System.out.println("resetting the value to be guessed......");
-                               rndom_no = (int)(Math.random()*50);
+                               rndom_no = (int)(Math.random()*10);
                        }
                }
 
