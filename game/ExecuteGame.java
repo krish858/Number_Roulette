@@ -11,7 +11,7 @@ public class ExecuteGame {
         String b = sc.nextLine();
         System.out.print("Player three is: ");
         String c = sc.nextLine();
-        System.out.print("Player fourygh is: ");
+        System.out.print("Player four is: ");
         String d = sc.nextLine();
         Game game = new Game(a,b,c,d);
         game.StartGame();
